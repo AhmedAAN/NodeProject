@@ -28,3 +28,7 @@ const dburi = 'mongodb+srv://ahmednagy:test123@cluster0.jnhdmvn.mongodb.net/meal
 httpServer.listen(4000, () => {
     console.log(`Server running on localhost:4000`)
 })
+
+app.get('/', (req, res) => {
+    res.json({ "name": "ahmed" })
+})
